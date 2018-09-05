@@ -26,5 +26,63 @@ Docker 镜像搜索：doudoubing/cundang
 
 客户端： android Actinium、windows v2ray 可用同一个服务端。
 
-youtube频道：https://www.youtube.com/channel/UClceV39J1Z_9D4_mHkBZrMg
+UUID刷新地址：https://www.uuidgenerator.net/
+
+修改后的环境变量配置：
+
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "uuid换成你自己的",
+          "alterId": 64,
+          "security": "加密方式自己选"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws"
+    }
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+   "settings": {}
+  }
+}
+
+未修改的环境变量配置：
+
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbound": {
+    "protocol": "vmess",
+    "port": 8080,
+    "settings": {
+      "clients": [
+        {
+          "id": "uuid换成你自己的",
+          "alterId": 64,
+          "security": "加密方式自己选"
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws"
+    }
+  },
+  "inboundDetour": [],
+  "outbound": {
+    "protocol": "freedom",
+   "settings": {}
+  }
+}
 
